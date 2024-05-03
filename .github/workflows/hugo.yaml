@@ -5,7 +5,8 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches:
-      - main
+      - master
+      - develop
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -32,7 +33,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.125.4
+      HUGO_VERSION: 0.92.2
     steps:
       - name: Install Hugo CLI
         run: |
